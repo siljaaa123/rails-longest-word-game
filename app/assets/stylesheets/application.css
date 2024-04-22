@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+a {
+  text-decoration: none;
+  margin:16px;
+  color: cornflowerblue;
+}
+
+#letters {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 16px;
+  padding: 16px;
+  flex-grow: 1;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid grey;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3:hover {
+  color: cornflowerblue;
+  background-color: white;
+  border-color: cornflowerblue;
+}
